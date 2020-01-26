@@ -1,0 +1,1053 @@
+@font-face
+  font-family: 'PragmaticaC'
+  src: url('../fonts/PragmaticaC.otf') format('otf')
+  font-weight: 300
+  font-style: normal
+@font-face
+  font-family: 'PragmaticaCBold'
+  src: url('../fonts/PragmaticaC-Bold.otf') format('otf')
+  font-weight: 300
+  font-style: normal
+@font-face
+  font-family: 'PragmaticaCBoldItalic'
+  src: url('../fonts/PragmaticaC-BoldItalic.otf') format('otf')
+  font-weight: 300
+  font-style: normal
+@font-face
+  font-family: 'PragmaticaCItalic'
+  src: url('../fonts/PragmaticaC-Italic.otf') format('otf')
+  font-weight: 300
+  font-style: normal
+@font-face
+  font-family: 'PragmaticaCondC'
+  src: url('../fonts/PragmaticaCondC.otf') format('otf')
+  font-weight: 300
+  font-style: normal
+@font-face
+  font-family: 'PragmaticaCondCBold'
+  src: url('../fonts/PragmaticaC-Bold.otf') format('otf')
+  font-weight: 300
+  font-style: normal
+@font-face
+  font-family: 'PragmaticaLightC'
+  src: url('../fonts/PragmaticaLightC.otf') format('otf')
+  font-weight: 300
+  font-style: normal
+@font-face
+  font-family: 'PragmaticaLightCBold'
+  src: url('../fonts/PragmaticaLightC-Bold.otf') format('otf')
+  font-weight: 300
+  font-style: normal
+@font-face
+  font-family: 'PragmaticaCLight'
+  src: url('../fonts/PragmaticaLightC.otf') format('otf')
+  font-weight: 300
+  font-style: normal
+@font-face
+  font-family: 'PragmaticaShadowC'
+  src: url('../fonts/PragmaticaShadowC.otf') format('otf')
+  font-weight: 300
+  font-style: normal
+@font-face
+  font-family: 'PragmaticaShadowCItalic'
+  src: url('../fonts/PragmaticaShadowC-Italic.otf') format('otf')
+  font-weight: 300
+  font-style: normal
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+.container
+  max-width: 1100px
+  width: 90%
+  margin: 0 auto
+.top
+  border-bottom: 1px solid #c7c7c7
+  .container
+    .topLine
+      padding: 18px 0px
+      display: flex
+      a
+        margin-right: 35px
+        text-decoration: none
+        color: #383838
+        font-family: 'Pragmatica', sans-serif
+        font-size: 16px
+        font-weight: 400
+        i
+          margin-right: 7px
+      p
+        font-family: 'PragmaticaLight',sans-serif
+        color: #383838
+        font-size: 14px
+        i
+          margin-right: 23px
+.ovfhd
+  overflow: hidden
+.dpb
+  display: block!important
+.rt
+  transform: rotate(180deg)
+#overlay
+  position: fixed
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, .8)
+  z-index: 3
+  display: none
+header .container .nav .menu ul li
+  margin-bottom: 8px
+header .container .nav .menu ul.menuDropDown li
+  margin-right: 0px
+  width: 100%
+  text-align: center
+.menuDropDown
+  position: absolute
+  margin-top: 25px
+  top: 26px
+  left: 0px
+  display: none
+  ul
+    li
+      display: block!important
+      position: relative
+      &:last-child
+        margin-bottom: 0
+      i
+        transition: .3s
+.mobileMenu
+  display: none
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 3
+  font-family: 'Pragmatica C', sans-serif
+  font-size: 13px
+  text-transform: uppercase
+  li
+    margin-bottom: 15px
+    display: block
+    list-style-type: none
+    text-align: center
+    &:last-child
+      margin-bottom: 0px
+    a
+      text-decoration: none
+      color: white
+header
+  padding-top: 20px
+  .container
+    .nav
+      display: flex
+      align-items: center
+      justify-content: space-between
+      .logo
+        margin-left: 21px
+        img
+          width: 192px
+          height: 87px
+          max-width: 192px
+          max-height: 87px
+      .menu
+        ul
+          font-family: 'PragmaticaC', sans-serif
+          font-size: 14px
+          font-weight: 400
+          text-transform: uppercase
+          #menuButton
+            display: none
+          li.parrent
+            padding: 20px 0px
+          li
+            margin-right: 26px
+            display: inline-block
+            list-style-type: none
+            position: relative
+            &:last-child
+              margin-right: 0px
+            a
+              text-decoration: none
+              color: black
+              i
+                transition: .3s
+#trigger
+  &:hover
+    .menuDropDown
+      display: block
+.prom
+  padding-top: 55px
+  padding-bottom: 150px
+  .container
+    position: relative
+    display: flex
+    justify-content: space-around
+    .backLines
+      position: absolute
+      max-width: 1099px
+      width: 100%
+      height: 420px
+      border: 1px solid #383838
+      top: 50%
+      transform: translateY(-50%)
+    .Item1
+      background-image: url(../img/maslo.png)
+    .Item2
+      background-image: url(../img/hleb.png)
+    .Item3
+      background-image: url(../img/moloko.png)
+    .promItem
+      width: 289px
+      height: 588px
+      display: flex
+      flex-direction: column
+      justify-content: center
+      z-index: 2
+      position: relative
+      padding: 0px 20px
+      cursor: pointer
+      .promOverlay
+        display: none
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: white
+        opacity: .9
+      h2
+        text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.53)
+        color: #ffffff
+        max-width: 297px
+        font-family: 'PragmaticaCBold', sans-serif
+        font-size: 27px
+        text-transform: uppercase
+        margin-left: -50px
+        z-index: 2
+      img
+        display: none
+        width: 25px
+        height: 21px
+        max-width: 25px
+        z-index: 2
+        max-height: 21px
+        margin-top: 20px
+      p
+        display: none
+        color: #383838
+        font-family: 'PragmaticaC', sans-serif
+        font-size: 14px
+        font-weight: 400
+        z-index: 2
+        line-height: 20px
+        margin-top: 30px
+      &:hover
+        h2
+          color: #000000
+          text-shadow: none
+        img
+          display: block
+        p
+          display: block
+        .promOverlay
+          display: block
+.info
+  background-image: url(../img/info_bg.png)
+  padding: 200px 0px
+  background-size: cover
+  background-position: center
+  .container
+    h3
+      color: #383838
+      font-family: 'PragmaticaCBold', sans-serif
+      font-size: 36px
+      line-height: 46.82px
+      margin-bottom: 60px
+    ul
+      color: #383838
+      font-family: 'PragmaticaC', sans-serif
+      font-size: 16px
+      font-weight: 400
+      line-height: 24px
+      margin-left: 20px
+      margin-bottom: 90px
+      li
+        max-width: 528px
+        list-style-image: url(../img/ex.png)
+        margin-bottom: 30px
+        &:last-child
+          margin-bottom: 0px
+    .moreButton
+      text-decoration: none
+      width: 161px
+      height: 51px
+      border-radius: 51px
+      background-color: #f05540
+      display: flex
+      justify-content: center
+      align-items: center
+      color: #ffffff
+      font-family: 'PragmaticaC', sans-serif
+      font-size: 16px
+      line-height: 18px
+.sliderWrapper_prevArrow
+  position: absolute
+  left: -55px
+  top: 50%
+  transform: translateY(-50%)
+.sliderWrapper_nextArrow
+  position: absolute
+  right: -55px
+  top: 50%
+  transform: translateY(-50%)
+#slider
+  background-image: url(../img/slider_bg.png)
+  padding-top: 180px
+  padding-bottom: 220px
+  background-size: cover
+  .container
+    .sliderContent
+      max-width: 996px
+      width: 100%
+      height: 342px
+      background-color: #ffffff
+      padding: 60px 0px
+      margin: 0 auto
+      h3
+        color: #383838
+        font-family: 'PragmaticaCBold', sans-serif
+        font-size: 24px
+        line-height: 36px
+        text-transform: uppercase
+        text-align: center
+      .sliderWrapper
+        margin: 0px 100px
+        .sliderItem
+          display: flex
+          justify-content: center
+          align-items: center
+//page 2 styles -------------------------------------------------------------
+.breadcrumbs
+  padding: 30px 0px
+  .container
+    ul
+      list-style-image: url(../img/arrright.png)
+      font-family: 'PragmaticaC', sans-serif
+      font-size: 14px
+      font-weight: 400
+      li
+        display: inline-block
+        margin-right: 15px
+        &:last-child
+          a
+            color: #b6b6b6!important
+        a
+          color: #383838
+          text-decoration: none
+      .fawww
+        color: #b6b6b6
+.about
+  padding-bottom: 130px
+  padding-top: 100px
+  background-image: url(../img/maslizor.png)
+  background-repeat: no-repeat
+  background-position: right
+  .container
+    font-family: 'PragmaticaC', sans-serif
+    font-size: 16px
+    line-height: 24px
+    h3
+      color: #383838
+      font-family: 'PragmaticaCBold', sans-serif
+      font-size: 36px
+      margin-bottom: 75px
+    p
+      max-width: 614px
+      margin-bottom: 30px
+    .advant
+      margin-top: 60px
+      .advantItem
+        max-width: 562px
+        margin-bottom: 35px
+        &:last-child
+          margin-bottom: 0px
+        span
+          font-family: 'PragmaticaCBold', sans-serif
+          font-weight: 700
+        p
+          display: inline
+
+.preview
+  background-image: url(../img/page2preev.png)
+  background-position: center
+  height: 270px
+  margin-top: 50px
+  background-repeat: no-repeat
+  .container
+    height: 100%
+    display: flex
+    align-items: center
+    h3
+      text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.53)
+      color: #ffffff
+      font-family: 'PragmaticaCBold', sans-serif
+      font-size: 35px
+      text-transform: uppercase
+      max-width: 386px
+.feedback
+  background-image: url(../img/myzhik.png)
+  background-size: cover
+  padding-top: 85px
+  padding-bottom: 70px
+  background-position: center
+  .container
+    .feedbackContent
+      color: #383838
+      font-family: 'PragmaticaC', sans-serif
+      font-weight: 400
+      max-width: 543px
+      min-height: 506px
+      padding: 45px 50px
+      background-color: #f05540
+      span
+        font-size: 14px
+        margin-bottom: 15px
+      h3
+        font-size: 30px
+        font-weight: 700
+        margin-bottom: 40px
+      form
+        input
+          padding: 14px 15px
+          margin-bottom: 14px
+          border: none
+          outline: none
+        .fio
+          input
+            width: 100%
+        .phoneEmail
+          display: flex
+          justify-content: space-between
+          input[type="tel"]
+            width: 58%
+          input[type="email"]
+            width: 40%
+        .comentary
+          textarea
+            display: block
+            padding: 10px 15px
+            width: 100%
+            height: 80px
+            resize: none
+            margin-bottom: 13px
+        .feedbackButton
+          font-size: 14px
+          font-weight: 700
+          color: #383838
+          text-decoration: none
+          display: flex
+          justify-content: center
+          align-items: center
+          width: 191px
+          height: 51px
+          border-radius: 51px
+          background-color: #ffffff
+          margin-bottom: 19px
+        .politics
+          p
+            font-size: 12px
+.ingridients
+  padding-top: 150px
+  padding-bottom: 130px
+  .container
+    display: flex
+    justify-content: space-around
+    .ingridientsItem
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      text-decoration: none
+      p
+        font-family: 'PragmaticaC', sans-serif
+        font-size: 24px
+        font-weight: 700
+        line-height: 30px
+        width: 241px
+        margin-bottom: 30px
+        text-align: center
+        color: black
+      img
+        width: 418px
+        height: 441px
+        min-width: 418px
+        min-height: 441px
+//page3 styles-------------------------------------------------------
+.preview3
+  background-image: url(../img/page3preev.png)
+.about3
+  background-image: url(../img/hlebleb.png)
+  ul
+    list-style-image: url(../img/galochka.png)
+    margin-left: 23px
+  .page3fir
+    max-width: 512px
+    margin-bottom: 30px
+  .page3sec
+    max-width: 850px
+    margin-top: 30px
+    li
+      margin-bottom: 27px
+      &:last-child
+        margin-bottom: 0
+@media all and (max-width: 1500px)
+  .about
+    background-size: 40%
+@media all and (max-width: 1350px)
+  .about
+    background-size: 40%
+@media all and (max-width: 1100px)
+  .prom .container
+    flex-direction: column
+    align-items: center
+    .backLines
+      display: none
+    .promItem
+      margin-bottom: 20px
+      height: 450px
+      &:last-child
+        margin-bottom: 0px
+@media all and (max-width: 1000px)
+  .about
+    background-image: none
+    .container
+      .aboutContent
+        p
+          max-width: inherit
+  .about
+    background-image: none
+    .container
+      p
+        max-width: inherit
+  .ingridients .container
+    flex-direction: column
+    a
+      &:first-child
+        margin-bottom: 30px
+  .feedback
+    background-color: #d9dce7
+    background-image: none
+    .container
+      display: flex
+      justify-content: center
+  .menuDropDown
+    position: static
+  header .container .nav .menu ul li
+    display: none
+  #menuButton
+    display: block!important
+    font-size: 30px
+@media all and (max-width: 800px)
+  .breadcrumbs
+    display: none
+  .top .container .topLine
+    flex-direction: column
+  .top .container .topLine p i
+    margin-right: 15px
+@media all and (max-width: 700px)
+  .about
+    background-image: none
+@media all and (max-width: 500px)
+  .ingridients .container .ingridientsItem img
+    width: 300px
+    height: 316px
+    min-width: 300px
+    min-height: 316px
+  .feedback .container .feedbackContent
+    padding: 45px 20px
+  .feedback .container .feedbackContent form .phoneEmail
+    flex-direction: column
+    input
+      width: 100%!important
+
+  .preview .container h3
+    font-size: 27px
+  #slider .container .sliderContent .sliderWrapper
+    margin: 0px 0px
+  .sliderWrapper_prevArrow
+    left: 5px
+  .sliderWrapper_nextArrow
+    right: 5px
+@media all and (max-width: 400px)
+  .prom .container .promItem h2
+    margin-left: 0px
+    text-align: center
+    font-size: 24px
+
+#paralax
+  padding-top: 120px
+  padding-bottom: 200px
+  position: relative
+  overflow: hidden
+  .paral_block-img
+    img
+      position: absolute
+      max-width: 100%
+  .cirle_small_parral
+    position: absolute
+    border-radius: 50%
+  .rose_par-one
+    width: 73px
+    height: 73px
+    background-color: #f05540
+    opacity: 0.13
+    right: 45%
+    top: 250px
+  .white_par-one
+    width: 51px
+    height: 51px
+    border: 1px solid #383838
+    right: 150px
+    top: 150px
+  .white_par-two
+    width: 51px
+    height: 51px
+    border: 1px solid #383838
+    left: 3%
+    top: 43%
+  .rose_par-two
+    width: 42px
+    height: 42px
+    background-color: #f05540
+    opacity: 0.13
+    top: 50%
+    left: 9%
+  .white_par-third
+    width: 85px
+    height: 85px
+    border: 1px solid #383838
+    bottom: 15%
+    left: 3%
+  .rose_par-third
+    width: 46px
+    height: 46px
+    background-color: #f05540
+    opacity: 0.13
+    left: 40%
+    bottom: 5%
+  .white_par-four
+    width: 48px
+    height: 48px
+    border: 1px solid #383838
+    left: 60%
+    bottom: 7%
+  .rose_par-four
+    width: 29px
+    height: 29px
+    background-color: #f05540
+    opacity: 0.13
+    bottom: 25%
+    right: 2%
+  .white_par-five
+    width: 85px
+    height: 85px
+    border: 1px solid #383838
+    bottom: 36%
+    right: 5%
+
+  .quality_block
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    margin-bottom: 80px
+    .head_5
+      color: #383838
+      font-family: 'PragmaticaCondCBold', sans-serif
+      font-size: 30px
+      font-weight: 700
+      line-height: 30px
+      max-width: 480px
+      margin-bottom: 47px
+    .quality_txt
+      max-width: 525px
+      p
+        color: #383838
+        font-family: 'PragmaticaCondC', sans-serif
+        font-size: 16px
+        font-weight: 400
+        line-height: 24px
+        margin-bottom: 35px
+  .animation_wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+  .first_circle
+    margin-bottom: -50px
+  .circle_left
+    margin-bottom: -120px
+  .circle_right
+    margin-bottom: -190px
+  .anim_list
+    width: 255px
+    height: 255px
+    border: 1px solid #383838
+    background: #fff
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    padding: 25px
+    position: relative
+    p
+      color: #383838
+      font-family: 'PragmaticaCondC', sans-serif
+      font-size: 18px
+      font-weight: 400
+      line-height: 24px
+    .anim_item
+      position: absolute
+      left: 50%
+      top: 50%
+      width: 300px
+      height: 300px
+      display: flex
+      justify-content: center
+      align-items: center
+      padding: 30px
+      color: #fff
+      border-radius: 50%
+      transform: translate(-50%, -50%) scale(0)
+      background: #f05540
+      transition: all .5s ease
+      p
+        color: #ffffff
+        font-family: 'PragmaticaCondC', sans-serif
+        font-size: 14px
+        line-height: 18px
+    &:hover
+      .anim_item
+        transform: translate(-50%, -50%) scale(1)
+        border-radius: 50%
+        transition: all .5s ease
+
+#where_me
+  padding-top: 240px
+  padding-bottom: 70px
+  .how_search-wrap
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    .how_search-item
+      .policy
+        color: #383838
+        font-family: 'PragmaticaCondCBold', sans-serif
+        font-size: 14px
+        font-weight: 400
+        line-height: 24px
+        .comp_pol
+          margin-top: 40px
+      .head_6
+        color: #383838
+        font-family: 'PragmaticaCondCBold', sans-serif
+        font-size: 24px
+        line-height: 24px
+        letter-spacing: -0.6px
+        margin-bottom: 60px
+      .contacts
+        margin-bottom: 60px
+        .mail_ad
+          margin-top: 30px
+          margin-bottom: 45px
+        .location, .mail_ad, .phone_ad
+          display: flex
+          justify-content: flex-start
+          align-self: center
+
+          .loc_address
+            max-width: 220px
+            color: #383838
+            font-family: 'PragmaticaCondC', sans-serif
+            font-size: 14px
+            font-weight: 400
+            line-height: 24px
+          .icon_loc
+            margin-right: 20px
+            img
+              margin-top: 5px
+          a
+            color: #383838
+            font-family: 'PragmaticaCondC', sans-serif
+            font-size: 14px
+            font-weight: 400
+            line-height: 24px
+            text-decoration: none
+          a.tel
+            color: #383838
+            font-family: 'PragmaticaCondC', sans-serif
+            font-size: 16px
+            font-weight: 400
+      .wrap_offer-f
+        display: flex
+        align-items: flex-start
+        justify-content: flex-start
+        nav.foot_menu
+          display: block
+          margin-left: 120px
+          min-width: 220px
+          ul
+            list-style: none
+            li
+              display: block
+              border-bottom: 1px solid #383838
+              &:last-child
+                border-bottom: 0
+              a
+                text-decoration: none
+                color: #383838
+                font-family: 'PragmaticaCondC', sans-serif
+                font-size: 14px
+                font-weight: 400
+                line-height: 30px
+                display: block
+      form
+        width: 380px
+        border: 1px solid #383838
+        background-color: #ffffff
+        padding: 16px 60px
+        input
+          display: block
+          margin-bottom: 10px
+          width: 100%
+          height: 52px
+          line-height: 50px
+          padding: 0px 15px
+          color: #000
+          font-family: 'PragmaticaCondC', sans-serif
+          font-size: 17px
+          font-weight: 400
+          letter-spacing: -0.42px
+          outline: none
+          border: 1px solid #e3e3e3
+          &::-webkit-input-placeholder
+            color: #a0a0a0
+            font-family: 'PragmaticaCondC', sans-serif
+            font-size: 17px
+            font-weight: 400
+            line-height: 24px
+            letter-spacing: -0.42px
+          &::-moz-placeholder
+            color: #a0a0a0
+            font-family: 'PragmaticaCondC', sans-serif
+            font-size: 17px
+            font-weight: 400
+            line-height: 24px
+            letter-spacing: -0.42px
+          &:-moz-placeholder
+            color: #a0a0a0
+            font-family: 'PragmaticaCondC', sans-serif
+            font-size: 17px
+            font-weight: 400
+            line-height: 24px
+            letter-spacing: -0.42px
+          &:-ms-input-placeholder
+            color: #a0a0a0
+            font-family: 'PragmaticaCondC', sans-serif
+            font-size: 17px
+            font-weight: 400
+            line-height: 24px
+            letter-spacing: -0.42px
+        input[type=submit]
+          background-color: #f05540
+          width: 130px
+          border: none
+          color: #ffffff
+          font-family: 'PragmaticaCondC', sans-serif
+          font-size: 18px
+          font-weight: 400
+          line-height: 24px
+          cursor: pointer
+          letter-spacing: -0.45px
+        textarea
+          display: block
+          width: 100%
+          height: 80px
+          resize: none
+          color: #000
+          margin-bottom: 10px
+          border: 1px solid #e3e3e3
+          padding: 15px 15px
+          font-family: 'PragmaticaCondC', sans-serif
+          font-size: 17px
+          font-weight: 400
+          line-height: 24px
+          letter-spacing: -0.42px
+          outline: none
+          &::-webkit-input-placeholder
+            color: #a0a0a0
+            font-family: 'PragmaticaCondC', sans-serif
+            font-size: 17px
+            font-weight: 400
+            line-height: 24px
+            letter-spacing: -0.42px
+          &::-moz-placeholder
+            color: #a0a0a0
+            font-family: 'PragmaticaCondC', sans-serif
+            font-size: 17px
+            font-weight: 400
+            line-height: 24px
+            letter-spacing: -0.42px
+          &:-moz-placeholder
+            color: #a0a0a0
+            font-family: 'PragmaticaCondC', sans-serif
+            font-size: 17px
+            font-weight: 400
+            line-height: 24px
+            letter-spacing: -0.42px
+          &:-ms-input-placeholder
+            color: #a0a0a0
+            font-family: 'PragmaticaCondC', sans-serif
+            font-size: 17px
+            font-weight: 400
+            line-height: 24px
+            letter-spacing: -0.42px
+
+        .head_5
+          color: #383838
+          margin-bottom: 30px
+          font-family: 'PragmaticaCBold', sans-serif
+          font-size: 24px
+          font-weight: 700
+          line-height: 24px
+          letter-spacing: -0.6px
+
+footer
+  border-top: 1px solid #c7c7c7
+  padding: 20px 0px
+  .wrap_foot
+    display: flex
+    justify-content: space-between
+    align-items: center
+    img
+      max-width: 100%
+    p
+      color: #8b8b8b
+      font-family: 'PragmaticaCondC', sans-serif
+      font-size: 14px
+      font-weight: 400
+.preview_milk
+  background-image: url(../img/milk_bg.png)
+#milk_product
+  overflow-x: hidden
+  padding-bottom: 150px
+  //background: url("../img/milk_glass.png") no-repeat 110% 10%
+  .first_milk-prod
+    display: flex
+    .db_milk_glass-img
+      margin-right: -450px
+  .head_3
+    color: #383838
+    margin-top: 80px
+    font-family: 'PragmaticaCBold', sans-serif
+    font-size: 36px
+    font-weight: 700
+    margin-bottom: 75px
+  .offer_milk-production
+    max-width: 620px
+    p
+      color: #383838
+      font-family: 'PragmaticaCondC', sans-serif
+      font-size: 16px
+      font-weight: 400
+      line-height: 24px
+      margin-bottom: 35px
+      span
+        font-family: 'PragmaticaCBold', sans-serif
+        font-weight: 700
+
+    p.und_ul
+      margin-bottom: 10px
+    .red_head
+      color: #f05540
+      font-family: 'PragmaticaCBold', sans-serif
+      font-size: 24px
+      font-weight: 700
+      margin-bottom: 35px
+    .bifido
+      margin-top: 90px
+    ul
+      list-style: none
+      li
+        color: #383838
+        font-family: 'PragmaticaCondC', sans-serif
+        font-size: 16px
+        font-weight: 400
+        line-height: 24px
+        img
+          margin-right: 17px
+  .second_offer_milk
+    margin-top: 80px
+    display: flex
+    .db_sec-img
+      margin-left: -300px
+      margin-right: 40px
+  .third_milk-prod
+    margin-top: 150px
+    .offer_milk-production
+      max-width: 100%
+
+@media all and (max-width: 1100px)
+  #where_me .how_search-wrap .how_search-item .wrap_offer-f nav.foot_menu
+    margin-left: 10px
+  #milk_product .first_milk-prod .db_milk_glass-img
+    display: none
+  #milk_product .second_offer_milk .db_sec-img
+    display: none
+  #milk_product .offer_milk-production
+    min-width: 100%
+
+@media all and (max-width: 970px)
+  #where_me .how_search-wrap .how_search-item .wrap_offer-f
+    flex-wrap: wrap
+  #where_me .how_search-wrap .how_search-item .wrap_offer-f nav.foot_menu
+    margin-left: 0
+@media all and (max-width: 830px)
+  #paralax .quality_block
+    flex-direction: column
+    align-items: center
+  #paralax .quality_block .head_5
+    max-width: 100%
+  #paralax .quality_block .quality_txt
+    max-width: 100%
+  #paralax .animation_wrap
+    flex-direction: column
+    align-items: center
+  #paralax .first_circle
+    margin-bottom: 0px
+  #paralax .circle_left
+    margin-bottom: 0px
+  #paralax .circle_right
+    margin-bottom: 0px
+  #paralax .quality_block
+    margin-bottom: 40px
+  #paralax .center_circ_paral
+    margin: 40px 0px
+@media all and (max-width: 710px)
+  #where_me .how_search-wrap
+    flex-wrap: wrap
+  #where_me .item_form
+    order: 0
+    width: 100%
+    margin-bottom: 20px
+  #where_me .how_search-wrap .how_search-item form
+    width: 100%
+  #where_me .how_search-wrap .how_search-item form
+    padding: 16px 25px
+  #where_me .first_item
+    order: 1
+@media all and (max-width: 460px)
+  footer .wrap_foot
+    flex-direction: column
+    align-items: center
+    p
+      margin-bottom: 15px
